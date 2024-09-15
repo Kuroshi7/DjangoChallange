@@ -6,13 +6,15 @@ Este é um projeto Django simples para gerenciar uma aplicação web com página
 - **Image Viewer**: Página para exibir uma imagem a partir de uma URL.
 - **CSV Viewer**: Página para exibir dados de um arquivo CSV.
 
-  Certifique-se de ter o Python e o pip instalados. Além disso, é necessário o Django e outros pacotes listados no `requirements.txt`.
+Certifique-se de ter o Python e o pip instalados. Além disso, é necessário o Django e outros pacotes listados no `requirements.txt`.
+  
 **Clone o repositório**:
 
-    ```bash
-    git clone https://github.com/Kuroshi7/DjangoChallange.git
-    ```
+   ```bash
+   git clone https://github.com/Kuroshi7/DjangoChallange.git
+   ```
 **Instale as dependências**:
+
 va ate o diretorio WebHub
    ```bash
     pip install -r requirements.txt
