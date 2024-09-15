@@ -27,7 +27,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     animation: fadeIn 0.5s ease-in-out;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(116, 21, 224, 0.8);
     border-radius: 5px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.1); /* Fundo da tabela com transparência */
@@ -59,7 +59,7 @@ h1 {
     margin: 0 auto 20px;
     max-width: 60%;
     box-sizing: border-box;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(33, 193, 221, 0.8);
 }
 
 /* Limita tamanho da imagem */
@@ -126,7 +126,7 @@ a.back-home-button {
 
 a.back-home-button:hover {
     background-color: rgba(57, 9, 85, 0.8);
-    border-color: rgba(255, 255, 255, 0.7); /* Mudança de cor no hover */
+    border-color: rgba(23, 214, 221, 0.7); /* Mudança de cor no hover */
     color: #ddd;
 }
 
