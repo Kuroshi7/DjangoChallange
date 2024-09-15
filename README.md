@@ -28,4 +28,7 @@ Para iniciar o servidor de desenvolvimento do Django, execute no diretorio do ma
 ## Utilizando as paginas
 - A primeira pagina serve como um redirecionamento paras as maginas Image e CSV viewer
 - A pagina de image Viewer coloque um URL valido de uma imagem na web e ela sera mostrada abaixo na tela
+  EXEMPLO ```
+             https://plus.unsplash.com/premium_photo-1661714220704-711551e73799?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          ```
 - CSV viwer mostra uma tabela de alunos contendo nome, idade, peso e altura respectivamente
