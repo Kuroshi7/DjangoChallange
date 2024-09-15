@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2E073F, #4B0E69, #7A1CAC);
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.5s ease-in-out;
+    height: 100vh;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Efeito vidro preto translúcido */
+    border-radius: 5px; /* Borda reta */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra maior para destaque */
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    backdrop-filter: blur(8px); /* Efeito de desfoque de fundo */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo da tabela com transparência */
+}
+
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Texto branco para contraste */
+}
+
+th {
+    background-color: rgba(74, 12, 112, 0.8); /* Fundo do header da tabela mais escuro */
+    font-weight: bold;
+}
+
+/* Centraliza título */
+h1 {
+    background-color: rgba(74, 12, 112, 0.8); /* Fundo do título combinando com o design */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 60%;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Limita tamanho da imagem */
+img {
+    max-width: 100%; /* imagem ate largura do contêiner */
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza horizontal */
+    
+}
+
+
+/* Botões */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(74, 12, 112, 0.8); /* Cor dos botões compatível com a paleta */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgba(57, 9, 85, 0.8); /* Efeito hover mais escuro */
+}
+
+/* Botões de redirect */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: rgba(74, 12, 112, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.button:hover {
+    background-color: rgba(57, 9, 85, 0.8);
+}
+
+/* Botão para página home */
+a.back-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgba(74, 12, 112, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgba(74, 12, 112, 0.8);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+a.back-home-button:hover {
+    background-color: rgba(57, 9, 85, 0.8);
+    border-color: rgba(255, 255, 255, 0.7); /* Mudança de cor no hover */
+    color: #ddd;
+}
+
+input[type="text"] {
+    width: 30%; 
+    padding: 10px; /* espaço interno */
+    margin: 10px 0; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+
+input[type="text"]::placeholder {
+    color: #888; 
+    font-size: 16px; 
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .center-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button, a.button, a.back-home-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+    img {
+        max-height: 400px;
+        max-width: 400px; 
+    }
+}

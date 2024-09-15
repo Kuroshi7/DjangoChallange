@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% load static %}  
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+</head>
+<body>
+    <div class="card border-primary mb-3" style="max-width: 50%; max-height: 50%;">
+        <div class="card-header" style="text-align: center;">Home Page</div>
+        <div class="card-body">
+            <a href="{% url 'image_viewer' %}"  class="btn btn-primary">Ir para image Viewer</a>
+            <a href="{% url 'csv_viewer' %}" class="btn btn-primary">Ir para CSV Viewer</a>
+        </div>
+    </div>
+    
+</body>
+</html>

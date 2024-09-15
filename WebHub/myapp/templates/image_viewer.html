@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
+</head>
+<body>
+    <div class="center-box">
+        <h1>Image Viewer</h1>
+        <form action="{% url 'image_viewer' %}" method="post">
+            {% csrf_token %}
+            <label for="image_url">insira URL da imagem:</label>
+            <input type="text" id="image_url" name="image_url" value="{{ image_url }}" required>
+            <button type="submit" class="button">Mostrar</button>
+        </form>
+        <br>
+        {% if image_url %}
+            <h2>Image Preview:</h2>
+            <img src="{{ image_url }}" alt="Image">
+        {% else %}
+            <p>Nenhuma URL providenciada.</p>
+        {% endif %}
+        <br>
+        <a href="{% url 'index' %}" class="back-home-button">Voltar para Home</a>
+    </div>
+</body>
+</html>
