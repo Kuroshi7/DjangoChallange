@@ -157,6 +157,11 @@ input[type="text"]::placeholder {
 
 
 @media (max-width: 768px) {
+    body{
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .center-box {
         width: 90%;
         padding: 15px;
